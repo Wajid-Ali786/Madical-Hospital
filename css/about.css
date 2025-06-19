@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+
+
+:root {
+    --dr-blue: #1f2b6c;
+    --lg-blue: #159EEC;
+    --Yeseva-One: "Yeseva One", serif;
+    --Work-Sans: "Work Sans", sans-serif;
+}
+
+.hero-section {
+    background-image: url("../images/about-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    padding: 78px 0 97px;
+    background-position: top center;
+}
+
+.hero-section-bg-2 {
+    background-image: url("../images/about-hero-bg-btm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3px;
+    background-position: bottom;
+}
+
+.hero-p {
+    font-family: var(--Work-Sans);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--dr-blue);
+    margin: 0;
+}
+
+.hero-h4 {
+    font-family: var(--Yeseva-One);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: var(--dr-blue);
+
+}
+
+.welcome-section {
+    margin: 64px 0;
+}
+
+.welcome-content-div {
+    display: flex;
+    gap: 20px;
+}
+
+.wellcome-text-div {
+    font-family: var(--Work-Sans) !important;
+    text-align: left;
+}
+
+.welcome-p1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--lg-blue);
+    margin-bottom: 8px;
+}
+
+.welcome-h4 {
+    font-family: var(--Yeseva-One);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: var(--dr-blue);
+}
+
+.welcome-img-div {
+    width: 90%;
+}
+
+.welcome-img-div img {
+    width: 100%;
+}
+
+.wellcome-text-div .list-bl-dot {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+    gap: 2rem;
+    margin: 24px 0 16px;
+}
+
+.wellcome-text-div .list-bl-dot li {
+    font-family: var(--Work-Sans);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: #000;
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 26px;
+}
+
+.wellcome-text-div .list-bl-dot li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--lg-blue);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: calc((1.4em - 16px) / 2);
+}
+
+.welcome-p2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.testimonials-section {
+    background-image: url(../images/testimonials-bg.png);
+    background-color: var(--dr-blue);
+    background-blend-mode: soft-light;
+    padding: 64px 0;
+}
+
+.testimonials-content {
+    text-align: center;
+}
+
+.testominials-svg {
+    width: 45px;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.testimonials-p {
+    font-family: var(--Work-Sans);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    color: #FCFEFE;
+    width: 658px;
+    margin: auto;
+}
+
+.testimonials-line {
+    border: 1px solid #BFD2F8;
+    width: 221.5px;
+    margin: 20px auto;
+}
+
+.testimonials-p2 {
+    width: fit-content;
+    margin: auto;
+    font-family: var(--Work-Sans);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    color: #FCFEFE;
+}
+
+.testimonials-section .slick-dots li.slick-active button:before {
+    color: #BFD2F8;
+}
+
+.testimonials-section .slick-dots li button:before {
+    color: #FCFEFE;
+}
+
+
+
+
+@media (max-width: 991px) {
+    .hero-h4{
+        font-size: 35px;
+    }
+    .welcome-content-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .welcome-h4 {
+        font-size: 35px;
+    }
+
+    .testimonials-p {
+        width: 95%;
+    }
+
+    .testimonials-line {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+    .news-card {
+        flex-direction: column;
+        row-gap: 10px;
+
+    }
+
+    .news-text-div {
+        padding: 10px;
+    }
+}

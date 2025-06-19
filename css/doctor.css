@@ -1,0 +1,9 @@
+.doctors-section {
+    margin: 64px 0;
+}
+
+@media (max-width: 991px) {
+    .doctors-section {
+    margin: 30px 0;
+}
+}

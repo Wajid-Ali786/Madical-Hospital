@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+
+:root {
+    --dr-blue: #1f2b6c;
+    --lg-blue: #159EEC;
+    --Yeseva-One: "Yeseva One", serif;
+    --Work-Sans: "Work Sans", sans-serif;
+}
+
+.hero-section {
+    background-image: url(../images/appointment-hero-bg.png);
+}
+
+.map-div .container,
+#map {
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+.map-div {
+    margin-top: 64px;
+    position: relative;
+    height: 450px;
+}
+
+.leaflet-bottom.leaflet-right {
+    display: none;
+}
+
+.main-appointment-section {
+    padding: 64px 0 0;
+}
+
+.booking-form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.booking-form-section .h4 {
+    font-family: var(--Yeseva-One);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    columns: var(--dr-blue);
+    margin-bottom: 16px;
+}
+
+.booking-form-section .p {
+    font-family: var(--Work-Sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #212124;
+}
+
+.booking-form-div #message {
+    min-height: 180px;
+}
+
+.shedule-section {
+    padding: 48px 50px 46.5px;
+    background-color: var(--dr-blue);
+    border: 2px solid #BFD2F8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.shedule-section .h2 {
+    font-family: var(--Yeseva-One);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: #BFD2F8;
+    margin-bottom: 51px;
+    text-align: center;
+}
+
+.shedule-div {
+    display: flex;
+    flex-direction: column;
+    gap: 25.04px;
+}
+
+.shedule-div .p {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--Work-Sans);
+    color: #FCFEFE;
+    align-items: center;
+}
+
+.shedule-day {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    width: 100px;
+}
+
+.shedule-dash {
+    width: 19.5px;
+    height: 2px;
+    background: #BFD2F8;
+}
+
+.shedule-time {
+    font-size: 16px;
+    width: 165px;
+}
+
+.shedule-line {
+    border: 1px solid #BFD2F8;
+    margin: 32px 25px;
+}
+
+.shedule-emergency-div {
+    display: flex;
+    gap: 8px;
+}
+
+.shedule-emergency-icon {
+    width: 50px;
+    height: 47.5;
+}
+
+.shedule-emergency-text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--Work-Sans);
+    line-height: 100%;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.shedule-emergency-text .p1 {
+    color: #FCFEFE;
+}
+
+.shedule-emergency-text .p2 {
+    color: #BFD2F8;
+}
+
+@media (max-width: 991px) {
+    .map-div {
+        margin-top: 30px;
+    }
+
+    .map-div {
+        height: 350px;
+    }
+
+    .main-appointment-section {
+        padding-top: 30px;
+    }
+
+    .booking-form-section .p {
+        margin-bottom: 10px;
+    }
+
+    .shedule-section {
+        padding: 20px;
+    }
+
+    .shedule-section .h2 {
+        margin-bottom: 30px;
+    }
+
+    .shedule-div {
+        gap: 15px;
+    }
+    .shedule-emergency-div{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .map-div {
+        height: 250px;
+    }
+
+    .shedule-section .h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .shedule-div .p{
+        flex-direction: column;
+        gap: 3px;
+        text-align: center;
+    }
+}
